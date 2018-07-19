@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9u-Su-fSr">
+                                <rect key="frame" x="38" y="84" width="52" height="30"/>
+                                <state key="normal" title="增加"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b25-3R-lJg">
+                                <rect key="frame" x="38" y="167" width="52" height="30"/>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="delegateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EeV-80-MWP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3U-xv-L5c">
+                                <rect key="frame" x="38" y="250" width="52" height="30"/>
+                                <state key="normal" title="修改"/>
+                                <connections>
+                                    <action selector="changeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esZ-eU-lyw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hI-bF-6Fs">
+                                <rect key="frame" x="38" y="320" width="52" height="30"/>
+                                <state key="normal" title="查找"/>
+                                <connections>
+                                    <action selector="findAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6md-C4-DX5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2S-X3-2OF">
+                                <rect key="frame" x="38" y="84" width="52" height="30"/>
+                                <state key="normal" title="增加"/>
+                                <connections>
+                                    <action selector="AddAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uiN-6k-ded"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h2S-X3-2OF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="08z-i3-JPT"/>
+                            <constraint firstItem="h2S-X3-2OF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="2QV-nk-Cq7"/>
+                            <constraint firstItem="L3U-xv-L5c" firstAttribute="leading" secondItem="h2S-X3-2OF" secondAttribute="leading" id="60j-3I-RMU"/>
+                            <constraint firstItem="b25-3R-lJg" firstAttribute="height" secondItem="h2S-X3-2OF" secondAttribute="height" id="8pi-oP-1m4"/>
+                            <constraint firstItem="2hI-bF-6Fs" firstAttribute="height" secondItem="h2S-X3-2OF" secondAttribute="height" id="9XE-A7-VIj"/>
+                            <constraint firstItem="L3U-xv-L5c" firstAttribute="height" secondItem="h2S-X3-2OF" secondAttribute="height" id="JmM-Bj-2g8"/>
+                            <constraint firstItem="b25-3R-lJg" firstAttribute="width" secondItem="h2S-X3-2OF" secondAttribute="width" id="PVn-oD-8To"/>
+                            <constraint firstItem="2hI-bF-6Fs" firstAttribute="top" secondItem="L3U-xv-L5c" secondAttribute="bottom" constant="40" id="Q9h-Fn-438"/>
+                            <constraint firstItem="L3U-xv-L5c" firstAttribute="width" secondItem="h2S-X3-2OF" secondAttribute="width" id="SUE-53-lM1"/>
+                            <constraint firstItem="L3U-xv-L5c" firstAttribute="top" secondItem="b25-3R-lJg" secondAttribute="bottom" constant="53" id="Vde-tK-cbY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h2S-X3-2OF" secondAttribute="trailing" constant="285" id="a7O-kI-ov7"/>
+                            <constraint firstItem="L3U-xv-L5c" firstAttribute="leading" secondItem="p9u-Su-fSr" secondAttribute="leading" id="eaW-za-Z42"/>
+                            <constraint firstItem="L3U-xv-L5c" firstAttribute="leading" secondItem="b25-3R-lJg" secondAttribute="leading" id="eco-cj-grY"/>
+                            <constraint firstItem="2hI-bF-6Fs" firstAttribute="width" secondItem="h2S-X3-2OF" secondAttribute="width" id="fzu-f3-kpY"/>
+                            <constraint firstItem="L3U-xv-L5c" firstAttribute="leading" secondItem="2hI-bF-6Fs" secondAttribute="leading" id="kqc-Uy-0re"/>
+                            <constraint firstItem="b25-3R-lJg" firstAttribute="top" secondItem="h2S-X3-2OF" secondAttribute="bottom" constant="53" id="qDB-6v-TKi"/>
+                            <constraint firstItem="p9u-Su-fSr" firstAttribute="baseline" secondItem="h2S-X3-2OF" secondAttribute="baseline" id="tjh-Ha-0Yw"/>
+                            <constraint firstItem="L3U-xv-L5c" firstAttribute="trailing" secondItem="p9u-Su-fSr" secondAttribute="trailing" id="wIO-pk-VFk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AddBtn" destination="h2S-X3-2OF" id="hmZ-yz-1wM"/>
+                        <outlet property="ChangeBtn" destination="L3U-xv-L5c" id="pne-LC-TY3"/>
+                        <outlet property="DelBtn" destination="b25-3R-lJg" id="a7q-nD-nUG"/>
+                        <outlet property="FindBtn" destination="2hI-bF-6Fs" id="Gf5-sl-oAx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>
